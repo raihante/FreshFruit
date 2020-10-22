@@ -1,0 +1,42 @@
+﻿<Window x:Class="FreshFruit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FreshFruit"
+        mc:Ignorable="d"
+        Title="FreshFruit | Add to your bucket!" Height="452.55" Width="737.535">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="651*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="100" Margin="45,105,0,0" VerticalAlignment="Top" Width="100" Source="Assets/anggur.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="96.545,105,0,0" VerticalAlignment="Top" Width="100" Source="Assets/apple.png" Stretch="Fill" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="45,255,0,0" VerticalAlignment="Top" Width="100" Source="Assets/banana.jpg" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="96.545,255,0,0" VerticalAlignment="Top" Width="100" Source="Assets/orange.png" Grid.Column="1"/>
+        <Button x:Name="Button1" Content="Add" HorizontalAlignment="Left" Margin="57,217,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="Button2" Content="Add" HorizontalAlignment="Left" Margin="107.545,216,0,0" VerticalAlignment="Top" Width="75" Click="Button2_Click" Grid.Column="1"/>
+        <Button x:Name="Button4" Content="Add" HorizontalAlignment="Left" Margin="107.545,360,0,0" VerticalAlignment="Top" Width="75" Click="Button4_Click" Grid.Column="1"/>
+        <Button x:Name="Button3" Content="Add" HorizontalAlignment="Left" Margin="57,360,0,0" VerticalAlignment="Top" Width="75" Click="Button3_Click" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="ListBoxBucket" HorizontalAlignment="Left" Height="114" Margin="300.545,141,0,0" VerticalAlignment="Top" Width="270" Grid.Column="1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding name}" TextAlignment="Left"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Label Content="Hi, its your Buckets!" HorizontalAlignment="Left" Margin="300.545,105,0,0" VerticalAlignment="Top" Width="270" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
+        <Label Content="Fruit Shop" HorizontalAlignment="Left" Margin="45,16,0,0" VerticalAlignment="Top" Width="217" Height="35" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Grid.ColumnSpan="2"/>
+        <Label Content="Fresh and Healty" HorizontalAlignment="Left" Margin="45,49,0,0" VerticalAlignment="Top" Width="270" FontStyle="Italic" Grid.ColumnSpan="2"/>
+        <Separator HorizontalAlignment="Left" Height="22" Margin="45,75,0,0" VerticalAlignment="Top" Width="657" Background="#FFF0F0F0" Grid.ColumnSpan="2"/>
+        <Button x:Name="removerei" Content="Delete" Grid.Column="1" HorizontalAlignment="Left" Margin="496,264,0,0" VerticalAlignment="Top" Width="75" Click="removerei_Click"/>
+
+    </Grid>
+</Window>
