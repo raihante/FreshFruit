@@ -1,2 +1,1 @@
-#define hdsnacc (3302841146)// PC REHANN
-#define hdsnacc2 (0000000000)
+AKTIF
