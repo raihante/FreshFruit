@@ -1,1 +1,1 @@
-BYPASS CLOSE 9 MALEM
+CLOSE JAM 9                         
