@@ -1,1 +1,1 @@
-CLOSE JAM 9                         
+CLOSE JAM 9\n                         
